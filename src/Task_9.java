@@ -11,6 +11,6 @@ public class Task_9 {
         int m = scanner.nextInt();
         System.out.println("Введите число n");
         int n = scanner.nextInt();
-        System.out.println(((m >> 13 & 1) == (n >> 31 & 1)) ? "Числа с одинаковыми знаками" : "Числа с разными знаками");
+        System.out.println(((m >> 31 & 1) == (n >> 31 & 1)) ? "Числа с одинаковыми знаками" : "Числа с разными знаками");
     }
 }
