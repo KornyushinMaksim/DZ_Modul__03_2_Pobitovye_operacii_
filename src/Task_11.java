@@ -9,8 +9,20 @@ public class Task_11 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите число: ");
         int n = scanner.nextInt();
+        int count = 0;
+        int mask = 1;
+
         System.out.println(Integer.toBinaryString(n));
-        //дописать
-        System.out.println("Результат: " );
+
+        for (int i = 0; i < 31; i++){
+            if ((n >> i & mask) == 1) {
+                count++;
+            }
+            //mask <<= 1;
+            //System.out.println(Integer.toBinaryString(mask));
+        }
+
+
+        System.out.println("Результат: " + count);
     }
 }

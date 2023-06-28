@@ -11,7 +11,6 @@ public class Task_10 {
         int m = scanner.nextInt();
         System.out.print("Введите число n: ");
         int n = scanner.nextInt();
-        int mask = (m-n) >> 31;
         System.out.println(m & ((m-n) >> 31) | n & (~(m-n) >> 31));
     }
 }
