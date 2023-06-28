@@ -18,11 +18,7 @@ public class Task_11 {
             if ((n >> i & mask) == 1) {
                 count++;
             }
-            //mask <<= 1;
-            //System.out.println(Integer.toBinaryString(mask));
         }
-
-
         System.out.println("Результат: " + count);
     }
 }
